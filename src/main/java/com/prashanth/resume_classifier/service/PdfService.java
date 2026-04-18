@@ -23,6 +23,7 @@ public class PdfService {
             }
             PDFTextStripper stripper = new PDFTextStripper();
             String text = stripper.getText(document);
+            log.info("Entered into extractText and extracted");
 
             return text.replaceAll("\\s+"," ").trim();
 

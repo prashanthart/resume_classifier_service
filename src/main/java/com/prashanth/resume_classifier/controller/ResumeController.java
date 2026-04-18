@@ -4,6 +4,7 @@ import com.prashanth.resume_classifier.dto.PredictionResponse;
 import com.prashanth.resume_classifier.service.MlService;
 import com.prashanth.resume_classifier.service.PdfService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +14,7 @@ import org.springframework.web.multipart.MultipartFile;
 @RequestMapping("/resume")
 @RequiredArgsConstructor
 @RestController
+@Slf4j
 public class ResumeController {
 
     private final MlService mlService;
@@ -28,6 +30,8 @@ public class ResumeController {
 
 
         try{
+            log.info("Entered into uploadResume");
+
 
             if(file.isEmpty()){
                 return ResponseEntity.badRequest()

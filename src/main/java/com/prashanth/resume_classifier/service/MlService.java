@@ -41,6 +41,8 @@ public class MlService {
                         Map.class
                 );
 
+                log.info("got response: {}", request);
+
                 return Objects.requireNonNull(response.getBody()).get("category").toString();
 
 
