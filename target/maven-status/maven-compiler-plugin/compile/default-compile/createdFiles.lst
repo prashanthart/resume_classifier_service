@@ -1,0 +1,6 @@
+com\prashanth\resume_classifier\config\AppConfig.class
+com\prashanth\resume_classifier\dto\PredictionResponse.class
+com\prashanth\resume_classifier\ResumeClassifierApplication.class
+com\prashanth\resume_classifier\service\MlService.class
+com\prashanth\resume_classifier\service\PdfService.class
+com\prashanth\resume_classifier\controller\ResumeController.class
