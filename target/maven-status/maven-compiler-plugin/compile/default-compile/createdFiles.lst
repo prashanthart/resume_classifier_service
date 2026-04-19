@@ -1,3 +1,5 @@
+com\prashanth\resume_classifier\config\CorsConfig.class
+com\prashanth\resume_classifier\config\SecurityConfig.class
 com\prashanth\resume_classifier\config\AppConfig.class
 com\prashanth\resume_classifier\dto\PredictionResponse.class
 com\prashanth\resume_classifier\ResumeClassifierApplication.class
